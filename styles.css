@@ -19,11 +19,21 @@ header {
   padding: 24px 40px;
 }
 
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.marca img {
+  width: 48px;
+  height: 48px;
+}
+
 header p {
   font-family: var(--fuente-titulo);
   color: var(--color-rojo);
   font-size: 2rem;
-  text-align: center;
   margin: 0;
 }
 
@@ -78,14 +88,10 @@ blockquote footer {
 
 .img-placeholder {
   aspect-ratio: 3 / 4;
-  background-color: #eeeeee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999999;
-  font-family: var(--fuente-texto);
   width: 140px;
   flex-shrink: 0;
+  object-fit: cover;
+  display: block;
 }
 
 main {
@@ -132,13 +138,15 @@ main > section {
 }
 
 .ods-img {
+  width: 140px;
   aspect-ratio: 1 / 1;
+  object-fit: cover;
   margin-left: auto;
+  display: block;
 }
 
 footer {
-  margin: 0;
-  padding: 0;
+  padding: 24px 40px;
 }
 
 footer p {
